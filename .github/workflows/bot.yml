@@ -31,5 +31,5 @@ jobs:
           SHORTLINK_URL: ${{ secrets.SHORTLINK_URL }}
           DATABASE_URI: ${{ secrets.DATABASE_URI }}
         run: |
-          python main.py
+         python bot.py 
 
