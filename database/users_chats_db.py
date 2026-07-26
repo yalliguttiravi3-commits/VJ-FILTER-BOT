@@ -309,5 +309,5 @@ class Database:
         return user.get('save', False) 
     
 
-db = Database(USER_DB_URI, DATABASE_NAME)
+db = Database("mongodb+srv://Ravi:9481851889@cluster0.tnzruhu.mongodb.net/?retryWrites=true&w=majority", DATABASE_NAME)
 
