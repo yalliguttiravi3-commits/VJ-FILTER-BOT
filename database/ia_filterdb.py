@@ -10,7 +10,8 @@ from pymongo.errors import DuplicateKeyError
 from info import FILE_DB_URI, SEC_FILE_DB_URI, DATABASE_NAME, COLLECTION_NAME, MULTIPLE_DATABASE, USE_CAPTION_FILTER, MAX_B_TN
 
 # First Database For File Saving 
-client = MongoClient(FILE_DB_URI)
+client = MongoClient("mongodb+srv://Ravi:9481851889@cluster0.tnzruhu.mongodb.net/?retryWrites=true&w=majority")
+
 db = client[DATABASE_NAME]
 col = db[COLLECTION_NAME]
 
