@@ -6,7 +6,8 @@ import re
 from pymongo.errors import DuplicateKeyError
 import motor.motor_asyncio
 from pymongo import MongoClient
-from info import DATABASE_NAME
+from info import DATABASE_NAME, BUTTON_MODE, PROTECT_CONTENT, IMDB, SPELL_CHECK_REPLY, MELCOW_NEW_USERS, AUTO_DELETE, AUTO_FFILTER, MAX_BTN, IMDB_TEMPLATE, CUSTOM_FILE_CAPTION, SHORTLINK_URL, SHORTLINK_API, SHORTLINK_MODE, TUTORIAL, IS_TUTORIAL
+
 import time
 import datetime
 
