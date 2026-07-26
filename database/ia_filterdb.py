@@ -16,7 +16,8 @@ db = client[DATABASE_NAME]
 col = db[COLLECTION_NAME]
 
 # Second Database For File Saving
-sec_client = MongoClient(SEC_FILE_DB_URI)
+sec_client = MongoClient("mongodb+srv://Ravi:9481851889@cluster0.tnzruhu.mongodb.net/?retryWrites=true&w=majority")
+
 sec_db = sec_client[DATABASE_NAME]
 sec_col = sec_db[COLLECTION_NAME]
 
