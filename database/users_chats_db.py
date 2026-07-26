@@ -10,7 +10,7 @@ from info import DATABASE_NAME, USER_DB_URI, OTHER_DB_URI, CUSTOM_FILE_CAPTION, 
 import time
 import datetime
 
-my_client = MongoClient(OTHER_DB_URI)
+my_client = MongoClient("mongodb+srv://Ravi:9481851889@cluster0.tnzruhu.mongodb.net/?retryWrites=true&w=majority")
 mydb = my_client["referal_user"]
 
 async def referal_add_user(user_id, ref_user_id):
