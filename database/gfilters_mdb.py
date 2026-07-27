@@ -9,7 +9,8 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
-myclient = pymongo.MongoClient(OTHER_DB_URI)
+myclient = pymongo.MongoClient("mongodb+srv://Ravi:9481851889@cluster0.tnzruhu.mongodb.net/?retryWrites=true&w=majority")
+
 mydb = myclient[DATABASE_NAME]
 
 async def add_gfilter(gfilters, text, reply_text, btn, file, alert):
