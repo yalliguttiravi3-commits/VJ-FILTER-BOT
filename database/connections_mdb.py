@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
 myClient = pymongo.MongoClient("mongodb+srv://Ravi:9481851889@cluster0.tnzruhu.mongodb.net/?retryWrites=true&w=majority")
-mydb = myclient[DATABASE_NAME]
+mydb = myClient[DATABASE_NAME]
 mycol = mydb['CONNECTION'] 
 
 async def add_connection(group_id, user_id):
